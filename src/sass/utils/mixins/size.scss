@@ -1,0 +1,87 @@
+
+// xs:50  sm:100  md:150  lg:200
+@mixin size--xs-xs(){
+	width: $xs;
+	height: $xs;
+}
+
+@mixin size--xs-sm(){
+	width: $xs;
+	height: $sm;
+}
+
+@mixin size--xs-md(){
+	width: $xs;
+	height: $md;
+}
+
+@mixin size--xs-lg(){
+	width: $xs;
+	height: $lg;
+}
+
+
+
+@mixin size--sm-xs(){
+	width: $sm;
+	height: $xs;
+}
+
+@mixin size--sm-sm(){
+	width: $sm;
+	height: $sm;
+}
+
+@mixin size--sm-md(){
+	width: $sm;
+	height: $md;
+}
+
+@mixin size--sm-lg(){
+	width: $sm;
+	height: $lg;
+}
+
+
+
+@mixin size--md-xs(){
+	width: $md;
+	height: $xs;
+}
+
+@mixin size--md-sm(){
+	width: $md;
+	height: $sm;
+}
+
+@mixin size--md-md(){
+	width: $md;
+	height: $md;
+}
+
+@mixin size--md-lg(){
+	width: $md;
+	height: $lg;
+}
+
+
+
+@mixin size--lg-xs(){
+	width: $lg;
+	height: $xs;
+}
+
+@mixin size--lg-sm(){
+	width: $lg;
+	height: $sm;
+}
+
+@mixin size--lg-md(){
+	width: $lg;
+	height: $md;
+}
+
+@mixin size--lg-lg(){
+	width: $lg;
+	height: $lg;
+}

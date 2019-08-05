@@ -1,0 +1,85 @@
+.form {
+    @include size--lg-lg;
+    @include form--square-soft;
+    @include transition--bounce;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $form-color;
+    color: $txt-color;
+    text-align: center;
+
+    &.change{
+        &.mate {
+            @include form--circle;
+            transform: scale(1.4);
+        }
+    } 
+
+    &.wiggle{
+        &.mate {
+            animation: wiggle 2s linear infinite;
+        }
+    } 
+
+    &.text {
+        &.mate{
+            .text_content {
+                height: $lg;
+                padding: 10px;
+            }
+        }
+
+        .text_content {
+            position: absolute;
+            overflow: hidden;
+            bottom: 0;
+            background: $form-color-2;
+            height: 0;
+            width: $lg;
+            @include form--square-soft;
+            @include transition--bounce;
+        }
+    }
+
+    &.move{
+        @include transition--slow-move;
+        position: relative;
+        left: 0;
+        top: 0;
+
+        &.mate{
+            left: 100px;
+            top: 100px;
+            background: $form-color-2;
+            transform: rotate(360deg);
+        }
+    }
+
+    &.stretch{
+        &.mate{
+            width: 400px;
+        }
+    }
+
+    &.move--byother {
+        position: relative;
+        left: 0;
+
+        &.mate{
+            @include form--circle;
+            left: calc(100% - 102px);
+            background: $form-color-2;
+            transform: rotate(360deg);
+        }
+    }
+}
+
+
+
+
+
+
+
+

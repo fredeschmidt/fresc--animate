@@ -1,0 +1,21 @@
+
+@mixin transition--bounce(){
+	transition-property: all;
+	transition-duration: 0.75s;
+	transition-delay: 0s;
+	transition-timing-function: cubic-bezier(.77,-0.7,.24,1.64);
+}
+
+@mixin transition--fast-bounce(){
+	transition-property: all;
+	transition-duration: 0.4s;
+	transition-delay: 0s;
+	transition-timing-function: cubic-bezier(.72,-0.61,.25,1.51);
+}
+
+@mixin transition--slow-move(){
+	transition-property: all;
+	transition-duration: 2s, 2s, 1s, 1s;
+	transition-delay: 0, 0, 0, 1s;
+	transition-timing-function: ease-out, ease-in, linear, ease-in-out;
+}

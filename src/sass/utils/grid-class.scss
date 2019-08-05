@@ -1,0 +1,21 @@
+
+.height-100vh{
+	height: 100vh;
+}
+
+.horizontal-center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.vertical-center{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.margin-bottom-xs{
+	margin-bottom: 20px;
+}

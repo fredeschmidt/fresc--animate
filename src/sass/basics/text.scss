@@ -1,0 +1,23 @@
+
+
+ul{
+	list-style: none;
+}
+
+a{
+	position: relative;
+	left: 0;
+
+	font-weight: bold;
+	color: $txt-color;
+	cursor: pointer;
+	transition: $transition-ease;
+
+	&:hover{
+		left: 5px;
+		color: $txt-color;
+		text-decoration: none;
+	}
+}
+
+

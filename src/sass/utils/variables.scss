@@ -1,0 +1,73 @@
+
+$theme: 'theme-1';
+
+// colors
+$black: #000000;
+$white: #FFFFFF;
+$faded-grey: #D6D6D6;
+
+// neon colors
+$blue: #0000FF;
+
+// flat colors
+$pink: #f34d57;
+$dark-purple: #110630;
+$purple: #34148f;
+
+// nature colors
+$rosa: #DEA189;
+$dark-green: #69847B;
+$light-green: #C6DFD4;
+
+
+$color-1: '';
+$color-2: '';
+$color-3: '';
+$bg-color: '';
+$txt-color: '';
+$form-color: '';
+$form-color-2: '';
+
+@if $theme == 'theme-1'{
+	$color-1: $rosa;
+	$color-2: $light-green;
+	$color-3: $dark-green;
+
+	$bg-color: $rosa;
+	$txt-color: $white;
+	$form-color: $dark-green;
+	$form-color-2: $light-green;
+}
+
+@if $theme == 'theme-2'{
+	$color-1: $dark-purple;
+	$color-2: $pink;
+	$color-3: $purple;
+
+	$bg-color: $dark-purple;
+	$txt-color: $white;
+	$form-color: $pink;
+	$form-color-2: $purple;
+}
+
+
+
+// font
+$font-basic: 'Roboto', sans-serif;;
+
+
+// sizes
+$xs: 50px;
+$sm: 100px;
+$md: 150px;
+$lg: 200px;
+
+
+// transition
+$transition-ease: all 0.2s ease-in-out;
+
+// screen size
+$small-screen: 800px;
+$medium-screen: 1024px;
+$large-screen: 1280px;
+$x-large-screen: 1600px;

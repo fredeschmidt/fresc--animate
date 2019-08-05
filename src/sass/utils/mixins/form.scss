@@ -1,0 +1,13 @@
+
+@mixin form--diamond(){
+	border-radius: 2px;
+  	transform: rotateZ(45deg);
+}
+
+@mixin form--circle(){
+	border-radius: 50%;
+}
+
+@mixin form--square-soft(){
+	border-radius: 5px;
+}

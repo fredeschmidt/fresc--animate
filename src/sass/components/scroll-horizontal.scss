@@ -1,0 +1,50 @@
+$height: 100vh;
+$width: 3 * $height;
+
+.scroll-horizontal {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: $height 0 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    // rotate to scroll horizontal
+    width: $height;
+    max-height: $width;
+    transform: rotate(-90deg) translateY(-$height);
+    transform-origin: right top;
+
+    .box {
+        display: block;
+        width: $height;
+        height: $height;
+
+        // rotate to scroll horizontal
+        transform: rotate(90deg);
+        transform-origin: right top;
+
+        .background{
+            &--lg{
+                height: 100vh;
+            }
+            &--md{
+                z-index: 100;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 60vh;
+                width: 600px;
+            }
+        }
+    }
+}
+
+
+::-webkit-scrollbar, 
+::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+}
